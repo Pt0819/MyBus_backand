@@ -27,5 +27,6 @@ public class Movies {
     private String Movie_Publisher;             //电影发行商
     private String Movie_Producer;              //电影制作商
     private List<Teachers> Movie_TeachersList;              //电影出演演员List
+    private List<MoviesPicture> Movie_PictureList;          //电影的预览图List
 
 }

@@ -7,14 +7,14 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author Peter Huang
- * @date 2022/11/22 17:40
+ * @date 2022/11/23 17:53
+ * @detail 影片的图片类
  **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Component
-public class TeachersPicture {
-    private Integer TeachersPicture_Id;         //图片
-    private String Picture_Path;        //图片路径
-
+public class MoviesPicture {
+    private Integer MoviesPicture_Id;           //影片的图片id
+    private String MoviesPicture_Path;          //影片的图片路径
 }
