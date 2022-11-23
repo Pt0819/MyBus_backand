@@ -11,6 +11,7 @@ import java.util.Date;
 /**
  * @author Peter Huang
  * @date 2022/11/22 17:12
+ * @detail 演员实体类
  **/
 @Data
 @AllArgsConstructor
