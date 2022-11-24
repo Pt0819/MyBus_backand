@@ -27,14 +27,21 @@ public interface ITeachersService extends IBaseService{
      * */
     List<Teachers> findTeacherBy_FactoryName(String Factory_Name);
     /**
-     * @detail 描述:每日更新爬虫，添加新演员信息，新建一个演员，添加到List<Teacher>中，更新Teacher实体类中所有的信息
+     * @detail 描述:每日更新爬虫，添加新演员信息，新建一个演员，添加到List<Teacher>中，更新Teacher实体类中所有的信息（详细）
      * @param Teacher_Id,Teacher_Name,Factory_Id,Factory_Name,Teacher_BirthDay,Teacher_Age,Teacher_Cup,Teacher_Height,Teacher_Waist,
      * Teacher_Hipline,Teacher_Bust,Teacher_Habby,Teacher_picture
      * @return
      *
      * */
-    void updateTeacher(Integer Teacher_Id, String Teacher_Name, Integer Factory_Id, String Factory_Name, Date BirthDay, Integer Age,
+    void updateTeacher_Detail(Integer Teacher_Id, String Teacher_Name, Integer Factory_Id, String Factory_Name, Date BirthDay, Integer Age,
                        Integer Cup, Integer Height, Integer Waist, Integer Hipline, Integer Bust, Integer Habby, TeachersPicture picture);
+    /**
+     * @detail 描述:每日更新演员信息，用于添加演员的简略信息，更新Teacher实体类中部分重要信息
+     * @param Teacher_Id,Teacher_Name,Factory_Id,Factory_Name
+     * @return
+     *
+     * */
+    void updateTeacher_Brief(Integer Teacher_Id,String Teacher_Name,Integer Factory_Id,String Factory_Name);
 
 
 }
