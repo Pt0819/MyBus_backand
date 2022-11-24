@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import org.thymeleaf.spring5.processor.SpringUErrorsTagProcessor;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author Peter Huang
@@ -19,9 +20,8 @@ import java.util.Date;
 @Component
 public class Teachers {
     private Integer Teacher_Id;             //老师id
-    private Integer Factory_Id;              //厂商id
     private String Teacher_Name;             //老师名称
-    private String Factory_Name;            //厂商名称
+    private String Birth_Place;            //演员出生地名称
     private Date Teacher_BirthDay;                  //老师生日
     private Integer Teacher_Age;            //老师年龄
     private Integer Teacher_Cup;            //老师cup
@@ -31,6 +31,7 @@ public class Teachers {
     private Integer Teacher_Bust;               //胸围
     private Integer Teacher_Habby;              //爱好
     private TeachersPicture Teacher_picture;        //老师图片
+    private List<Movies> Teacher_MoviesList;        //演员出演的所有影片List
 
 
 }
