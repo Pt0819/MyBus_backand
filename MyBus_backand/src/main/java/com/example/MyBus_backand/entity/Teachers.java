@@ -22,7 +22,7 @@ public class Teachers {
     private Integer Factory_Id;              //厂商id
     private String Teacher_Name;             //老师名称
     private String Factory_Name;            //厂商名称
-    private Date BirthDay;                  //老师生日
+    private Date Teacher_BirthDay;                  //老师生日
     private Integer Teacher_Age;            //老师年龄
     private Integer Teacher_Cup;            //老师cup
     private Integer Teacher_Height;             //身高
