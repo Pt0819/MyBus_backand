@@ -18,7 +18,8 @@ import java.util.List;
 @NoArgsConstructor
 @Component
 public class Movies {
-    private String Movie_ID;           //电影ID 使用String类型，例如ipx-111
+    private String Movie_Id;           //电影Id，数据库中的显示id，在搜素一般使用番号或名称搜素
+    private String Movie_Noid;          //电影番号 使用String类型，例如ipx-111
     private String Movie_Name;          //电影名称
     private Date Movie_Date;            //影片上映（发行）时间
     private Integer Movie_Duration;         //电影时长（分钟）
