@@ -54,4 +54,10 @@ public interface IMoviesService extends IBaseService{
      *
      * */
     List<Teachers> findMovieBy_MovieTeacher(Teachers ... Teacher_Name);
+    /**
+     * @detail 通过爬虫爬下来的信息进行影片信息的更新
+     * @param Movie_New
+     * @return Movie_New
+     * */
+    void updateMovie_Detail(Movies Movie_New);
 }
