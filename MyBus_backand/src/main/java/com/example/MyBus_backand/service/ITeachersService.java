@@ -41,15 +41,14 @@ public interface ITeachersService extends IBaseService{
      * @return
      *
      * */
-    void updateTeacher_Detail(Integer Teacher_Id,String Teacher_Name,String Birth_Place, Date BirthDay, Integer Age, Integer Cup,
-                              Integer Height, Integer Waist, Integer Hipline, Integer Bust, Integer Habby, TeachersPicture picture);
-    /**
-     * @detail 描述:每日更新演员信息，用于添加演员的简略信息，更新Teacher实体类中部分重要信息
-     * @param Teacher_Id,Teacher_Name,Factory_Id,Factory_Name
-     * @return
-     *
-     * */
-    void updateTeacher_Brief(Integer Teacher_Id,String Teacher_Name,Integer Factory_Id,String Factory_Name);
+    void updateTeacher_Detail(Teachers Teacher_New);
+//    /**
+//     * @detail 描述:每日更新演员信息，用于添加演员的简略信息，更新Teacher实体类中部分重要信息
+//     * @param Teacher_Id,Teacher_Name,Factory_Id,Factory_Name
+//     * @return
+//     *
+//     * */
+//    void updateTeacher_Brief(Integer Teacher_Id,String Teacher_Name,Integer Factory_Id,String Factory_Name);
 
 
 }
