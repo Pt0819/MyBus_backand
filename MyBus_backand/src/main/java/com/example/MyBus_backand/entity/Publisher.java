@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 /**
  * @author Peter Huang
  * @date 2022/11/24 17:40
@@ -17,5 +19,5 @@ import org.springframework.stereotype.Component;
 public class Publisher {
     private String Publisher_Name;              //发行商名称
     private Integer Publisher_Id;               //发行商id
-
+    List<Movies> Publisher_MoviesList;              //该发行商所有的MovieList
 }
