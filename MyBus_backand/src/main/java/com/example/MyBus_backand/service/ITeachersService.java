@@ -1,5 +1,6 @@
 package com.example.MyBus_backand.service;
 
+import com.example.MyBus_backand.entity.Movies;
 import com.example.MyBus_backand.entity.Teachers;
 import com.example.MyBus_backand.entity.TeachersPicture;
 
@@ -49,6 +50,12 @@ public interface ITeachersService extends IBaseService{
 //     *
 //     * */
 //    void updateTeacher_Brief(Integer Teacher_Id,String Teacher_Name,Integer Factory_Id,String Factory_Name);
+    /**
+     * @detail 更新该演员的影片作品
+     * @param MovieNew_Detail
+     * @return
+     * */
+    void updateTeacher_NewMovie(Movies MovieNew_Detail);
 
 
 }
