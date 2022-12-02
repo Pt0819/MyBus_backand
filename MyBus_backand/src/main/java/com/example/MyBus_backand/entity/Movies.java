@@ -30,5 +30,6 @@ public class Movies {
     private List<Teachers> Movie_TeachersList;              //电影出演演员List
     private List<MoviesPicture> Movie_PictureList;          //电影的预览图List
     private List<Magnetic> Movie_MagneticList;              //电影的磁力链接List
+    private Series Movie_SeriesList;                  //电影的系列,每一步影片至多属于一个系列
 
 }
