@@ -25,11 +25,11 @@ public class Movies {
     private Integer Movie_Duration;         //电影时长（分钟）
     private String Movie_Director;          //电影导演
     private List<Category> Movie_CategoryList;             //电影类别，一部影片包含多种类别
-    private String Movie_Publisher;             //电影发行商
-    private String Movie_Producer;              //电影制作商
+    private Publisher Movie_Publisher;             //电影发行商
+    private Producer Movie_Producer;              //电影制作商
     private List<Teachers> Movie_TeachersList;              //电影出演演员List
     private List<MoviesPicture> Movie_PictureList;          //电影的预览图List
     private List<Magnetic> Movie_MagneticList;              //电影的磁力链接List
-    private Series Movie_SeriesList;                  //电影的系列,每一步影片至多属于一个系列
+    private Series Movie_SeriesName;                  //电影的系列,每一步影片至多属于一个系列
 
 }
