@@ -21,4 +21,10 @@ public interface PublisherMapper {
      * @return
      * */
     List<Publisher> SelectPublisherBy_PublisherName(@Param("Publisher_Name")String Publisher_Name);
+    /**
+     * 更新新的Publisher信息
+     * @param Publisher_New
+     * @return
+     * */
+    Publisher InsertPublish_New(@Param("Publisher_New")Publisher Publisher_New);
 }

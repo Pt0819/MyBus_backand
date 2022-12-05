@@ -25,5 +25,11 @@ public interface TeachersMapper {
      * @return
      * */
     List<Teachers> SelectTeacherBy_MovieName(@Param("Movie_Name")String Movie_Name);
+    /**
+     * 更新新的Teacher的信息
+     * @param Teacher_New
+     * @return
+     * */
+    Teachers InsertTeacher_New(@Param("Teacher_New")Teachers Teacher_New);
 
 }

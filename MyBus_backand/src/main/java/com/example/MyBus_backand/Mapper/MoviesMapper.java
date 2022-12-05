@@ -49,5 +49,11 @@ public interface MoviesMapper {
      * @return
      * */
     List<Movies> SelectMovieBy_ProducerName(@Param("Producer_Name")String Producer_Name);
+    /**
+     * 更新新影片
+     * @param Movie_New
+     * @return
+     * */
+    Movies InsertMovie_New(@Param("Movie_New")Movies Movie_New);
 
 }

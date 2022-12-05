@@ -19,4 +19,10 @@ public interface SeriesMapper {
      * @return
      * */
     List<Series> SelectSeriesBy_SeriesName(@Param("Series_Name")String Series_Name);
+    /**
+     * 更新新系列
+     * @param Series_New
+     * @return
+     * */
+    Series InsertSeries_New(@Param("Series_New")Series Series_New);
 }

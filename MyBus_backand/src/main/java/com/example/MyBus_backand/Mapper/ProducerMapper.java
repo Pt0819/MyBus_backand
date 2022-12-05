@@ -19,4 +19,10 @@ public interface ProducerMapper {
      * @return
      * */
     List<Producer> SelectProducerBy_ProducerName(@Param("Producer_Name")String Producer_Name);
+    /**
+     * 更新新的Producer的信息
+     * @param Producer_New
+     * @return
+     * */
+    Producer InsertProducer_New(@Param("Producer_New")Producer Producer_New);
 }
