@@ -21,5 +21,6 @@ public class Magnetic {
     private Integer Magnetic_Id;            //电影磁力链接Id
     private String Magnetic_large;              //电影磁力链接大小（**GB）
     private Date Magnetic_ReleaseDate;          //电影磁力链接分享时间
+    private Movies Movie_Magnetic;              //磁力对应的影片
 
 }
