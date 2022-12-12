@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="">
-
+<mapper namespace="com.example.MyBus_backand.Mapper.MoviesMapper">
+    <resultMap id="Movies" type="com.example.MyBus_backand.entity.Movies">
+        <id column="Movie_Id" property="id"/>
+        <result column="Movies_Noid" property="movie_noid"/>
+        <result column="Movie_Name" property="movie_name"/>
+        <result column="Movie_Date" property="movie_date"/>
+        <result column="Movie_Duration" property="movie_duration"/>
+        <result column="Movie_Director" property="movie_director"/>
+        <result column="Movie_Publisher" property="movie_publisher"/>
+        <result column="Movie_Producer" property="movie_producer"/>
+        <result column="Movie_SeriesName" property="movie_series"/>
+    </resultMap>
 </mapper>
