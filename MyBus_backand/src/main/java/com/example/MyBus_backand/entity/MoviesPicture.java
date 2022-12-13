@@ -17,4 +17,5 @@ import org.springframework.stereotype.Component;
 public class MoviesPicture {
     private Integer MoviesPicture_Id;           //影片的图片id
     private String MoviesPicture_Path;          //影片的图片路径
+    private String MoviePicture_Noid;                  //所属电影的番号
 }

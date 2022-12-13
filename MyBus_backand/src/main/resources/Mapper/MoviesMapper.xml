@@ -13,4 +13,29 @@
         <result column="Movie_Producer" property="movie_producer"/>
         <result column="Movie_SeriesName" property="movie_series"/>
     </resultMap>
+
+    <resultMap id="Category" type="com.example.MyBus_backand.entity.Category">
+        <id column="Category_UUid" property="category_uuid"/>
+        <result column="Category_Uid" property="category_uid"/>
+    </resultMap>
+
+    <resultMap id="Teachers" type="com.example.MyBus_backand.entity.Teachers">
+        <id column="Teacher_Id" property="teacher_id"/>
+        <result column="Teacher_Name" property="teacher_name"/>
+        <result column="Birth_Place" property="birth_place"/>
+        <result column="Teacher_Age" property="teacher_age"/>
+        <result column="Teacher_BirthDay" property="teacher_birthDay"/>
+        <result column="Teacher_Height" property="teacher_height"/>
+        <result column="Teacher_Waist" property="teacher_waist"/>
+        <result column="Teacher_Hipline" property="teacher_hipline"/>
+        <result column="Teacher_Bust" property="teacher_bust"/>
+        <result column="Teacher_Habby" property="teacher_habby"/>
+        <result column="Teacher_Cup" property="teacher_cup"/>
+    </resultMap>
+
+    <resultMap id="MoviesPicture" type="com.example.MyBus_backand.entity.MoviesPicture">
+        <id column="MoviePicture_Id" property="moviepicture_id"/>
+        <result column="MoviesPicture_Path" property="moviespicture_path"/>
+        <result column="MoviePicture_Noid" property="moviepicture_noid"/>
+    </resultMap>
 </mapper>
