@@ -38,4 +38,9 @@
         <result column="MoviesPicture_Path" property="moviespicture_path"/>
         <result column="MoviePicture_Noid" property="moviepicture_noid"/>
     </resultMap>
+
+    <resultMap id="Magnetic" type="com.example.MyBus_backand.entity.Magnetic">
+        <id column="Magnetic_Id" property="magnetic_id"/>
+
+    </resultMap>
 </mapper>
