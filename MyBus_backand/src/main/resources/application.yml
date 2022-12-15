@@ -1,0 +1,8 @@
+server:
+  port: 8888
+
+
+mybatis:
+  mapper-locations: classpath:Mapper/*.xml
+  type-aliases-package: com.example.MyBus_backand.entity
+
