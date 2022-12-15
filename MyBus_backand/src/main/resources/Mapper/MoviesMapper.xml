@@ -41,6 +41,9 @@
 
     <resultMap id="Magnetic" type="com.example.MyBus_backand.entity.Magnetic">
         <id column="Magnetic_Id" property="magnetic_id"/>
+        <result column="Magnetic_Name" property="magnetic_name"/>
+        <result column="Magnetic_large" property="magnetic_large"/>
+        <result column="Magnetic_ReleaseDate" property="magnetic_releasedate"/>
 
     </resultMap>
 </mapper>
