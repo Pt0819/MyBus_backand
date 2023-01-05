@@ -28,6 +28,7 @@ public class Movies {
     private Publisher Movie_Publisher;             //电影发行商
     private Producer Movie_Producer;              //电影制作商
     private List<Teachers> Movie_TeachersList;              //电影出演演员List
+    private List<TeachersPicture> Movie_TeachersPicture;        //所有参演人员的图片
     private List<MoviesPicture> Movie_PictureList;          //电影的预览图List
     private List<Magnetic> Movie_MagneticList;              //电影的磁力链接List
     private Series Movie_SeriesName;                  //电影的系列,每一步影片至多属于一个系列

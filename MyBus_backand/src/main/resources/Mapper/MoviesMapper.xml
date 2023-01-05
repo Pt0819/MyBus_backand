@@ -47,4 +47,87 @@
 
     </resultMap>
 
+<!--    通过Noid搜索影片 番号搜索-->
+    <select id="SelectMovieBy_Noid" resultMap="movies">
+        select * from movies where movie_noid like cnocat("%", #{Movie_Noid},"%")
+    </select>
+
+<!--   通过Movie_Name查询影片 模糊查询-->
+    <select id=" SelectMovieBy_Name" resultMap="movies">
+        select * from movies where movie_name like concat("%", #{Movie_Name},"%")
+    </select>
+
+<!--    通过系列名Movie_SeriesName查询影片 模糊查询-->
+    <select id="SelectMovieby_Series" resultMap="movies">
+        select * from movies where movie_seriesname like concat("%", #{Movie_SeriesName},"%")
+    </select>
+
+<!--    通过查询影片Teacher_Name查询影片-->
+    <select id="SelectMovieBy_TeacherName" resultMap="movies">
+        select * from movies where teacher_name like concat("%", #{Movie_TeachersList},"%")
+    </select>
+
+<!--    通过Publisher_Name查询影片-->
+    <select id="SelectMovieBy_PublisherName" resultMap="movies">
+        select * from movies where publisher_name like concat("%", #{Movie_Publisher},"%")
+    </select>
+
+<!--    通过Producer_Name查询影片-->
+    <select id="SelectMovieBy_ProducerName" resultMap="movies">
+        select * from movies where producer_name like concat("%", #{Movie_Producer},"%")
+    </select>
+
+<!--    每日爬虫进行更新-->
+    <insert id="InsertMovie_New" useGeneratedKeys="true" keyColumn="movie_id"
+            keyProperty="Movie_Id" parameterType="com.example.MyBus_backand.entity.Movies">
+        insert into movies(movie_noid, movie_name, movie_date, movie_duration, movie_categoryList,
+                           <if test="Movie_Publisher != null">
+                               movie_publisher,
+                           </if>
+                           <if test="Movie_Producer != null">
+                               movie_producer,
+                           </if>
+                           
+                           movie_teacherList,
+                           <if test="Movie_TeachersPicture != null and Movie_TeachersPicture != ''">
+                               movie_teacherPicture,
+                           </if>
+                           
+                           <if test="Movie_PictureList != null">
+                               movie_pictureList, 
+                           </if>
+                           <if test="Movie_MagneticList != null">
+                               movie_magneticList, 
+                           </if>
+                           <if test="Movie_SeriesName != null and Movie_SeriesName != ''">
+                               movie_serious,
+                           </if>
+                           <if test="Movie_Director != null and Movie_Director !=''">
+                               movie_director
+                           </if>)
+                           values (#{Movie_Noid},#{Movie_Name},#{Movie_Date},#{Movie_Duration},#{Movie_CategoryList},
+                                   <if test="Movie_Publisher != null">
+                                       #{Movie_Publisher},
+                                   </if>
+                                   <if test="Movie_Producer != null">
+                                       #{Movie_Producer},
+                                   </if>
+                                   #{Movie_TeachersList},
+                                   <if test="Movie_TeachersPicture != null">
+                                       #{Movie_TeachersPicture},
+                                   </if>
+                                   <if test="Movie_PictureList != null">
+                                       #{Movie_PictureList},
+                                   </if>
+                                   <if test="Movie_MagneticList != null">
+                                       #{Movie_MagneticList},
+                                   </if>
+                                   <if test="Movie_SeriesName != null">
+                                       #{Movie_SeriesName},
+                                   </if>
+                                   <if test="Movie_Director != null">
+                                       #{Movie_Director}
+                                   </if>)
+    </insert>
+
 </mapper>

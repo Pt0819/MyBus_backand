@@ -30,7 +30,7 @@ public interface MoviesMapper {
      * @param Movie_SeriesName
      * @return
      * */
-    List<Movies> SelectMovieby_Series(@Param("Movie_SeriesList")String Movie_SeriesName);
+    List<Movies> SelectMovieby_Series(@Param("Movie_SeriesName")String Movie_SeriesName);
     /**
      * @detail 根据参演人员查询影片（参演人员>=1）
      * @param Teacher_Name
@@ -51,9 +51,9 @@ public interface MoviesMapper {
     List<Movies> SelectMovieBy_ProducerName(@Param("Producer_Name")String Producer_Name);
     /**
      * 更新新影片
-     * @param Movie_New
+     * @param Movie
      * @return
      * */
-    Movies InsertMovie_New(@Param("Movie_New")Movies Movie_New);
+    Movies InsertMovie_New(@Param("Movie")Movies Movie);
 
 }
