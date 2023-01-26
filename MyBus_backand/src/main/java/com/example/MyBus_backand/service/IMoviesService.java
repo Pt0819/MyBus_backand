@@ -3,6 +3,7 @@ package com.example.MyBus_backand.service;
 import com.example.MyBus_backand.entity.Category;
 import com.example.MyBus_backand.entity.Movies;
 import com.example.MyBus_backand.entity.Teachers;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
  * @date 2022/11/24 14:40
  * @detail 影片服务类接口
  **/
+@Service
 public interface IMoviesService extends IBaseService{
     /**
      * @detail 描述:通过影片名称进行查询
